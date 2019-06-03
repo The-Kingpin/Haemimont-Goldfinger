@@ -21,13 +21,6 @@ $(document).ready(function () {
     function printError(){
         console.log("Error in \"shape_dropdown.js\"")
     }
-
-    $("option").on("click", function () {
-       let selectedOption = $("option").value;
-
-       console.log(selectedOption);
-
-    })
-
+    
     console.log("Ready!");
 });

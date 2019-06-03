@@ -31,6 +31,7 @@ public class MapController {
     @RequestMapping(value = "/draw", params = {"x", "y", "shape"}, method = RequestMethod.GET)
     public Map drawShape(double x, double y, String shape) {
 
+        System.out.println();
         try {
             return mapService.getPolygonData(x, y, shape);
         } catch (ResourceAccessException e) {

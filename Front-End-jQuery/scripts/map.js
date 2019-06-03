@@ -5,11 +5,20 @@ $(document).ready(function () {
 
     map.doubleClickZoom.disable();
 
+    let shape = "";
+
+    $("#shape_type").change(function () {
+        clearLayers();
+        shape = `${this.value}`;
+
+        console.log(shape);
+    });
+
     map.on("dblclick", function (e) {
         let pointClicked = e.lngLat;
         let x = pointClicked.lng;
         let y = pointClicked.lat;
-        let shape = "soils";
+
         console.log(x + " " + y);
 
         $.ajax({
@@ -25,15 +34,24 @@ $(document).ready(function () {
         });
 
         function addPolygonLayer(data) {
-            if (data) {
-                map.addLayer(data);
+
+            if (map.getLayer(data.id)) {
+                map.removeLayer(data.id);
+                map.removeSource(data.id);
+
             } else {
-                allert("No data found for this point!");
+                map.addLayer(data);
             }
         }
 
         function printError(data) {
             alert(data);
         }
-    })
+    });
+
+    function clearLayers() {
+        console.log(map.layers);
+
+    }
+
 });
