@@ -71,8 +71,6 @@ public class MapServiceImp implements MapService {
                         data.setGeometry(map);
                         source.setData(data);
 
-                        //      polygon.put("geometry", map);
-
                         polygon.put("source", source);
 
                     } else if ("gid".equals(resultSetMetaData.getColumnName(i))) {

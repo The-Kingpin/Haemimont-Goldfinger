@@ -7,11 +7,17 @@ $(document).ready(function () {
 
     let shape = "";
 
+    let layersID = [];
+
     $("#shape_type").change(function () {
+
         clearLayers();
         shape = `${this.value}`;
 
-        console.log(shape);
+        //TODO clear comments
+        // console.log(layersID);
+        // console.log(shape);
+        // console.log(map);
     });
 
     map.on("dblclick", function (e) {
@@ -19,7 +25,8 @@ $(document).ready(function () {
         let x = pointClicked.lng;
         let y = pointClicked.lat;
 
-        console.log(x + " " + y);
+        //TODO clear comments
+        // console.log(x + " " + y);
 
         $.ajax({
             type: "GET",
@@ -35,11 +42,21 @@ $(document).ready(function () {
 
         function addPolygonLayer(data) {
 
-            if (map.getLayer(data.id)) {
+            if (data.id === undefined) {
+                console.log("No data for this point!");
+            } else if (map.getLayer(data.id)) {
                 map.removeLayer(data.id);
                 map.removeSource(data.id);
 
+                let indexOfLayer = layersID.indexOf(data.id);
+
+                layersID.splice(indexOfLayer, indexOfLayer);
+
             } else {
+
+                //TODO clear comments
+                // console.log("layer was added");
+                layersID.push(data.id);
                 map.addLayer(data);
             }
         }
@@ -50,8 +67,13 @@ $(document).ready(function () {
     });
 
     function clearLayers() {
-        console.log(map.layers);
+        for (let i = 0; i < layersID.length; i++) {
+            map.removeLayer(layersID[i]);
+            map.removeSource(layersID[i]);
 
+        }
+
+        layersID = [];
     }
 
 });

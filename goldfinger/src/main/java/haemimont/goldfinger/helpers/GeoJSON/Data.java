@@ -8,7 +8,6 @@ public class Data {
     private Map geometry;
 
     public Data() {
-//        geometry = new HashMap();
         setType();
     }
 

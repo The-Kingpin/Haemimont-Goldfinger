@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Front-End-jQuery/Front-End-jQuery.iml" filepath="$PROJECT_DIR$/../Front-End-jQuery/Front-End-jQuery.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/godlfingermap.iml" filepath="$PROJECT_DIR$/.idea/modules/godlfingermap.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/godlfingermap.main.iml" filepath="$PROJECT_DIR$/.idea/modules/godlfingermap.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/godlfingermap.test.iml" filepath="$PROJECT_DIR$/.idea/modules/godlfingermap.test.iml" />
