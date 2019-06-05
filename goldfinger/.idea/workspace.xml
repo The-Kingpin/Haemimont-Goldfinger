@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="489c885f-1473-46e5-ae36-57518d1b24db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Front-End-jQuery/Front-End-jQuery.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Front-End-jQuery/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Front-End-jQuery/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Front-End-jQuery/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Front-End-jQuery/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Front-End-jQuery/scripts/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Front-End-jQuery/scripts/map.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/helpers/GeoJSON/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/helpers/GeoJSON/Data.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/service/MapServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/service/MapServiceImp.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -75,8 +71,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/../Front-End-jQuery/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="164">
-                  <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+                <state relative-caret-position="435">
+                  <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
                 </state>
               </provider>
             </entry>
@@ -84,12 +80,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/../Front-End-jQuery/scripts/map.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret lean-forward="true" />
+                <state relative-caret-position="435">
+                  <caret line="77" column="24" selection-start-line="77" selection-start-column="24" selection-end-line="77" selection-end-column="24" />
                 </state>
               </provider>
             </entry>
@@ -110,6 +106,9 @@
       <find>point</find>
       <find>cross</find>
       <find>map</find>
+      <find>layers</find>
+      <find>mymap</find>
+      <find>remove</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -136,6 +135,7 @@
         <option value="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/service/MapServiceImp.java" />
         <option value="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/helpers/GeoJSON/Data.java" />
         <option value="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/controller/MapController.java" />
+        <option value="$PROJECT_DIR$/../Front-End-jQuery/index.html" />
         <option value="$PROJECT_DIR$/../Front-End-jQuery/scripts/map.js" />
       </list>
     </option>
@@ -151,17 +151,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="goldfinger" type="58d84e3e:PackageViewProjectNode" />
-              <item name="goldfinger" type="eaaa3913:PackageViewModuleGroupNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -209,6 +198,17 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="goldfinger" type="58d84e3e:PackageViewProjectNode" />
+              <item name="goldfinger" type="eaaa3913:PackageViewModuleGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -286,11 +286,13 @@
       <workItem from="1559487466526" duration="1763000" />
       <workItem from="1559588324417" duration="187000" />
       <workItem from="1559589053396" duration="12476000" />
+      <workItem from="1559728886227" duration="7608000" />
+      <workItem from="1559739437949" duration="4284000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103758000" />
+    <option name="totallyTimeSpent" value="115650000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -302,10 +304,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1440" height="824" extended-state="6" />
+    <frame x="-4" y="0" width="1448" height="874" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20588236" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21162124" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -326,7 +328,7 @@
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32954547" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info active="true" anchor="bottom" id="Run" order="14" sideWeight="0.49928263" visible="true" weight="0.4057554" />
+      <window_info active="true" anchor="bottom" id="Run" order="14" sideWeight="0.49928263" visible="true" weight="0.045822103" />
       <window_info anchor="bottom" id="Database Console" order="15" weight="0.32922536" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -700,15 +702,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../Front-End-jQuery/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+        <state relative-caret-position="435">
+          <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../Front-End-jQuery/scripts/map.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
+        <state relative-caret-position="435">
+          <caret line="77" column="24" selection-start-line="77" selection-start-column="24" selection-end-line="77" selection-end-column="24" />
         </state>
       </provider>
     </entry>

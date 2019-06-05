@@ -3,6 +3,7 @@ $(document).ready(function () {
 
     const mapUrl = "http://localhost:8082/map";
 
+    let layers =jQuery.extend(true, {}, map.style._layers);
     map.doubleClickZoom.disable();
 
     let shape = "";
@@ -11,7 +12,7 @@ $(document).ready(function () {
 
     $("#shape_type").change(function () {
 
-        clearLayers();
+                        removeLayersOnchange();
         shape = `${this.value}`;
 
         //TODO clear comments
@@ -48,6 +49,7 @@ $(document).ready(function () {
                 map.removeLayer(data.id);
                 map.removeSource(data.id);
 
+
                 let indexOfLayer = layersID.indexOf(data.id);
 
                 layersID.splice(indexOfLayer, indexOfLayer);
@@ -55,7 +57,7 @@ $(document).ready(function () {
             } else {
 
                 //TODO clear comments
-                // console.log("layer was added");
+                    // console.log("layer was added");
                 layersID.push(data.id);
                 map.addLayer(data);
             }
@@ -66,14 +68,22 @@ $(document).ready(function () {
         }
     });
 
-    function clearLayers() {
-        for (let i = 0; i < layersID.length; i++) {
-            map.removeLayer(layersID[i]);
-            map.removeSource(layersID[i]);
+        function removeLayersOnchange() {
 
-        }
+            for (let property in map.style._layers) {
 
-        layersID = [];
-    }
+                if (map.style._layers.hasOwnProperty(property)) {
+                    if (!isNaN(property)){
+
+                        
+                        map.removeLayer(property);
+                        map.removeSource(property);
+                            }else {
+                                break;
+                            }
+                        }
+
+                }
+            }
 
 });
