@@ -1,6 +1,5 @@
 package haemimont.goldfinger.helpers.GeoJSON;
 
-import java.util.HashMap;
 import java.util.Map;
 
 public class Data {

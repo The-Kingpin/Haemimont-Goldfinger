@@ -34,7 +34,7 @@ public class MapServiceImp implements MapService {
 
     @Override
     public Map getPolygonData(double x, double y, String shapeType) {
-        HashMap<String, Object> polygon = new HashMap<>();
+        HashMap<String, Object> polygon = new LinkedHashMap<>();
         String polygonGeometry = String.format("%s.geom", shapeType);
 
         String sql = String.
@@ -53,7 +53,9 @@ public class MapServiceImp implements MapService {
 
             ResultSetMetaData resultSetMetaData = resultSet.getMetaData();
             int columnCount = resultSetMetaData.getColumnCount();
-            polygon = new HashMap<>();
+            polygon = new LinkedHashMap<>();
+
+            Map<String, Object> properties = new LinkedHashMap<>();
 
             while (resultSet.next()) {
                 for (int i = 1; i <= columnCount; i++) {
@@ -78,13 +80,15 @@ public class MapServiceImp implements MapService {
                         polygon.put("type", "fill");
 
                     } else if (!"json".equals(resultSetMetaData.getColumnName(i))) {
-                        polygon.put(resultSetMetaData.getColumnName(i), resultSet.getObject(i));
+
+                        properties.put(resultSetMetaData.getColumnName(i), resultSet.getObject(i));
+
                     }
                 }
             }
 
-
-            Map<String, Object> color = new HashMap<>();
+            polygon.put("properties", properties);
+            Map<String, Object> color = new LinkedHashMap<>();
             color.put("fill-color", "#088");
             color.put("fill-opacity", 0.5);
             polygon.put("paint", color);

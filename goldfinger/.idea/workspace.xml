@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="489c885f-1473-46e5-ae36-57518d1b24db" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Front-End-jQuery/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Front-End-jQuery/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Front-End-jQuery/scripts/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Front-End-jQuery/scripts/map.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/helpers/GeoJSON/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/helpers/GeoJSON/Data.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/service/MapServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/service/MapServiceImp.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -65,34 +66,33 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4200542">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/../Front-End-jQuery/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="435">
-                  <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/../Front-End-jQuery/scripts/map.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="435">
-                  <caret line="77" column="24" selection-start-line="77" selection-start-column="24" selection-end-line="77" selection-end-column="24" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/haemimont/goldfinger/service/MapServiceImp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="57" column="65" selection-start-line="57" selection-start-column="65" selection-end-line="57" selection-end-column="65" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/haemimont/goldfinger/helpers/GeoJSON/Source.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+              <folding>
+                <element signature="e#190#191#0" expanded="true" />
+                <element signature="e#215#216#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -109,6 +109,8 @@
       <find>layers</find>
       <find>mymap</find>
       <find>remove</find>
+      <find>hash</find>
+      <find>data</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -132,15 +134,17 @@
         <option value="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/helpers/Source.java" />
         <option value="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/helpers/GeoJSON/Source.java" />
         <option value="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/helpers/GeoJSON/Paint.java" />
-        <option value="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/service/MapServiceImp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/helpers/GeoJSON/Data.java" />
         <option value="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/controller/MapController.java" />
         <option value="$PROJECT_DIR$/../Front-End-jQuery/index.html" />
         <option value="$PROJECT_DIR$/../Front-End-jQuery/scripts/map.js" />
+        <option value="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/helpers/GeoJSON/GeoJSONProperties.java" />
+        <option value="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/helpers/GeoJSON/Data.java" />
+        <option value="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/helpers/GeoJSON/GeoJsonProperties.java" />
+        <option value="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/service/MapServiceImp.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="y" value="25" />
     <option name="width" value="720" />
     <option name="height" value="824" />
@@ -154,6 +158,15 @@
       <pane id="ProjectPane">
         <subPane>
           <expand>
+            <path>
+              <item name="goldfinger" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Front-End-jQuery" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="goldfinger" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Front-End-jQuery" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
             <path>
               <item name="goldfinger" type="b2602c69:ProjectViewProjectNode" />
               <item name="goldfinger" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
@@ -192,6 +205,34 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="goldfinger" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="goldfinger" type="b2602c69:ProjectViewProjectNode" />
+              <item name="goldfinger" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="goldfinger" type="462c0819:PsiDirectoryNode" />
+              <item name="helpers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="goldfinger" type="b2602c69:ProjectViewProjectNode" />
+              <item name="goldfinger" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="goldfinger" type="462c0819:PsiDirectoryNode" />
+              <item name="helpers" type="462c0819:PsiDirectoryNode" />
+              <item name="GeoJSON" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="goldfinger" type="b2602c69:ProjectViewProjectNode" />
+              <item name="goldfinger" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="goldfinger" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -287,12 +328,13 @@
       <workItem from="1559588324417" duration="187000" />
       <workItem from="1559589053396" duration="12476000" />
       <workItem from="1559728886227" duration="7608000" />
-      <workItem from="1559739437949" duration="4284000" />
+      <workItem from="1559739437949" duration="10012000" />
+      <workItem from="1559756200314" duration="2523000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115650000" />
+    <option name="totallyTimeSpent" value="123901000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -304,10 +346,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="0" width="1448" height="874" extended-state="6" />
+    <frame x="-4" y="0" width="1448" height="874" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21162124" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.34648493" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -324,11 +366,11 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3294964" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50071734" side_tool="true" weight="0.4057554" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50143474" side_tool="true" weight="0.26280323" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32954547" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info active="true" anchor="bottom" id="Run" order="14" sideWeight="0.49928263" visible="true" weight="0.045822103" />
+      <window_info anchor="bottom" id="Run" order="14" sideWeight="0.4985653" visible="true" weight="0.26280323" />
       <window_info anchor="bottom" id="Database Console" order="15" weight="0.32922536" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -654,38 +696,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/haemimont/goldfinger/helpers/GeoJSON/Source.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-          <folding>
-            <element signature="e#190#191#0" expanded="true" />
-            <element signature="e#215#216#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/haemimont/goldfinger/service/MapServiceImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
-          <caret line="50" column="72" selection-start-line="50" selection-start-column="57" selection-end-line="50" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/haemimont/goldfinger/helpers/GeoJSON/Data.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#211#212#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/haemimont/goldfinger/controller/MapController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-90">
@@ -702,15 +712,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../Front-End-jQuery/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
+        <state relative-caret-position="399">
           <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../Front-End-jQuery/scripts/map.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="77" column="24" selection-start-line="77" selection-start-column="24" selection-end-line="77" selection-end-column="24" />
+        <state relative-caret-position="218">
+          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Front-End-jQuery/scripts/shapes_dropdown.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/haemimont/goldfinger/helpers/GeoJSON/GeoJsonProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/haemimont/goldfinger/helpers/GeoJSON/Data.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#186#187#0" expanded="true" />
+            <element signature="e#211#212#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/haemimont/goldfinger/helpers/GeoJSON/Source.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding>
+            <element signature="e#190#191#0" expanded="true" />
+            <element signature="e#215#216#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/haemimont/goldfinger/service/MapServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="57" column="65" selection-start-line="57" selection-start-column="65" selection-end-line="57" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
