@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import haemimont.goldfinger.helpers.GeoJSON.Data;
 import haemimont.goldfinger.helpers.GeoJSON.Source;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
@@ -33,7 +34,7 @@ public class MapServiceImp implements MapService {
     }
 
     @Override
-    public Map getPolygonData(double x, double y, String shapeType) {
+    public Map getPolygonData(double x, double y, String shapeType, String colorByField) {
         HashMap<String, Object> polygon = new LinkedHashMap<>();
         String polygonGeometry = String.format("%s.geom", shapeType);
 
@@ -55,7 +56,7 @@ public class MapServiceImp implements MapService {
             int columnCount = resultSetMetaData.getColumnCount();
             polygon = new LinkedHashMap<>();
 
-            Map<String, Object> properties = new LinkedHashMap<>();
+            Map<String, String> properties = new TreeMap<>();
 
             while (resultSet.next()) {
                 for (int i = 1; i <= columnCount; i++) {
@@ -63,8 +64,8 @@ public class MapServiceImp implements MapService {
                     if ("geom".equals(resultSetMetaData.getColumnName(i))) {
 
                         Source source = new Source();
-                        Data data = new Data();
 
+                        Data data = new Data();
 
                         String json = resultSet.getString("json");
 
@@ -80,8 +81,9 @@ public class MapServiceImp implements MapService {
                         polygon.put("type", "fill");
 
                     } else if (!"json".equals(resultSetMetaData.getColumnName(i))) {
-
-                        properties.put(resultSetMetaData.getColumnName(i), resultSet.getObject(i));
+                        String fieldName = resultSetMetaData.getColumnName(i);
+                        fieldName = fieldName.substring(0, 1).toUpperCase().concat(fieldName.substring(1));
+                        properties.put(fieldName, resultSet.getString(i));
 
                     }
                 }
@@ -89,7 +91,15 @@ public class MapServiceImp implements MapService {
 
             polygon.put("properties", properties);
             Map<String, Object> color = new LinkedHashMap<>();
-            color.put("fill-color", "#088");
+
+            colorByField = colorByField.substring(0, 1).toUpperCase().concat(colorByField.substring(1));
+
+
+            String colorValue = setColorByFieldValue(String.valueOf(properties.get(colorByField)));
+
+            System.out.println(colorValue);
+
+            color.put("fill-color", colorValue);
             color.put("fill-opacity", 0.5);
             polygon.put("paint", color);
         } catch (SQLException e) {
@@ -129,7 +139,54 @@ public class MapServiceImp implements MapService {
             e.printStackTrace();
         }
 
-        
+
         return shapes;
+    }
+
+    @Override
+    public SortedSet<String> findAllShapesFieldsNames(String shapeType) {
+        String sql = String.format("SELECT column_name FROM information_schema.columns WHERE table_name = '%s' AND NOT column_name = 'gid' AND NOT column_name = 'geom'", shapeType);
+
+        SortedSet<String> fields = new TreeSet<>();
+
+        try (Connection connection = DriverManager.getConnection(url, username, password);
+             PreparedStatement preparedStatement = connection.prepareStatement(sql);
+             ResultSet resultSet = preparedStatement.executeQuery()) {
+
+            if (!resultSet.isBeforeFirst()) {
+                System.out.println(NO_RESULT_FOUND);
+                throw new EmptyResultDataAccessException(NO_RESULT_FOUND, 1);
+            }
+
+            while (resultSet.next()) {
+                String fieldName = resultSet.getString("column_name").replaceAll("_", " ");
+                fieldName = fieldName.substring(0, 1).toUpperCase().concat(fieldName.substring(1));
+                fields.add(fieldName);
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return fields;
+    }
+
+    @Override
+    public String setColorByFieldValue(String fieldName) {
+
+        if (StringUtils.isNumeric(fieldName)){
+            fieldName +=9999;
+        }
+
+        int hash = fieldName.hashCode();
+
+        int r = (hash & 0xFF0000) >> 16;
+        int g = (hash & 0x00FF00) >> 8;
+        int b = (hash & 0x0000FF);
+
+        return String.format("#%02X%02X%02X", r, g, b);
+
+
+
     }
 }

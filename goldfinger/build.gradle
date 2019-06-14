@@ -30,4 +30,5 @@ dependencies {
 	//compile group: 'org.opengis', name: 'geoapi', version: '3.0.0'
 	compile group: 'org.locationtech.jts.io', name: 'jts-io-common', version: '1.16.0'
 	compile group: 'com.bedatadriven', name: 'jackson-datatype-jts', version: '2.4'
+	compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.0'
 }

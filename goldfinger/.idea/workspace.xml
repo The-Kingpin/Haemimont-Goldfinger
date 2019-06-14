@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="489c885f-1473-46e5-ae36-57518d1b24db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Front-End-jQuery/styles/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/Haemimont-Goldfinger.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Front-End-jQuery/scripts/colorby.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Front-End-jQuery/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Front-End-jQuery/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Front-End-jQuery/scripts/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Front-End-jQuery/scripts/map.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/controller/MapController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/controller/MapController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/service/MapService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/service/MapService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/service/MapServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/service/MapServiceImp.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -71,8 +78,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/haemimont/goldfinger/service/MapServiceImp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="133" column="5" lean-forward="true" selection-start-line="133" selection-start-column="5" selection-end-line="133" selection-end-column="5" />
+            <state relative-caret-position="190">
+              <caret line="177" column="29" selection-start-line="177" selection-start-column="29" selection-end-line="177" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,22 +88,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Front-End-jQuery/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="20" column="81" selection-start-line="20" selection-start-column="81" selection-end-line="20" selection-end-column="81" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../Front-End-jQuery/styles/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+            <state relative-caret-position="210">
+              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -104,17 +99,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../Front-End-jQuery/scripts/map.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="63" lean-forward="true" selection-start-line="6" selection-end-line="7" />
+            <state relative-caret-position="-904">
+              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Front-End-jQuery/scripts/shapes_dropdown.js">
+        <entry file="file://$PROJECT_DIR$/../Front-End-jQuery/scripts/colorby.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+            <state relative-caret-position="75">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -126,6 +121,7 @@
       <list>
         <option value="Class" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -139,6 +135,7 @@
       <find>remove</find>
       <find>hash</find>
       <find>data</find>
+      <find>console.log</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -151,24 +148,26 @@
         <option value="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/configuration/ModelMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/helpers/DrawnShapesCollection.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/bb03fae3-e055-4532-8e53-8853c3315300/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/c020a827-e1bf-4c97-b00f-1a1eaee0e35d/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/config/Cors.java" />
         <option value="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/service/ShapeServiceImp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/service/MapService.java" />
         <option value="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/configuration/CorsConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/helpers/Shape.java" />
         <option value="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/helpers/Source.java" />
         <option value="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/helpers/GeoJSON/Source.java" />
         <option value="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/helpers/GeoJSON/Paint.java" />
-        <option value="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/controller/MapController.java" />
         <option value="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/helpers/GeoJSON/GeoJSONProperties.java" />
         <option value="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/helpers/GeoJSON/Data.java" />
         <option value="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/helpers/GeoJSON/GeoJsonProperties.java" />
-        <option value="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/service/MapServiceImp.java" />
-        <option value="$PROJECT_DIR$/../Front-End-jQuery/index.html" />
         <option value="$PROJECT_DIR$/../Front-End-jQuery/styles/style.css" />
+        <option value="$PROJECT_DIR$/../Front-End-jQuery/styles/bootstrap/bootrstrap.min.css" />
+        <option value="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/service/MapService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/controller/MapController.java" />
+        <option value="$PROJECT_DIR$/../Front-End-jQuery/index.html" />
+        <option value="$PROJECT_DIR$/../Front-End-jQuery/scripts/colorby.js" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/haemimont/goldfinger/service/MapServiceImp.java" />
         <option value="$PROJECT_DIR$/../Front-End-jQuery/scripts/map.js" />
       </list>
     </option>
@@ -262,7 +261,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -274,15 +272,20 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Front-End-jQuery" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -355,12 +358,13 @@
       <workItem from="1559728886227" duration="7608000" />
       <workItem from="1559739437949" duration="10012000" />
       <workItem from="1559756200314" duration="9647000" />
-      <workItem from="1560338508356" duration="20896000" />
+      <workItem from="1560338508356" duration="42935000" />
+      <workItem from="1560534438671" duration="4522000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151921000" />
+    <option name="totallyTimeSpent" value="178482000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -372,10 +376,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="0" width="1448" height="874" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="870" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15136299" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19225252" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -384,18 +388,18 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Debug" order="2" weight="0.39856115" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.39757413" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="5" weight="0.3294964" />
+      <window_info anchor="bottom" id="TODO" order="5" weight="0.32884097" />
       <window_info anchor="bottom" id="Build" order="6" weight="0.32954547" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3294964" />
-      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32884097" />
+      <window_info anchor="bottom" id="Spring" order="8" weight="0.32884097" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50143474" side_tool="true" weight="0.26280323" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32954547" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Database Changes" order="12" weight="0.32884097" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32884097" />
       <window_info active="true" anchor="bottom" id="Run" order="14" sideWeight="0.4985653" visible="true" weight="0.287062" />
       <window_info anchor="bottom" id="Database Console" order="15" weight="0.32922536" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -453,20 +457,7 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/haemimont/goldfinger/controller/MapController.java</url>
-          <line>33</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/haemimont/goldfinger/configuration/GeomtryParserConfig.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/haemimont/goldfinger/helpers/GeomtryParser.java" />
     <entry file="file://$PROJECT_DIR$/goldfinger.iml">
       <provider selected="true" editor-type-id="text-editor" />
@@ -483,13 +474,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="121" selection-start-column="121" selection-end-column="121" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="16" selection-start-line="16" selection-end-line="31" selection-end-column="83" />
         </state>
       </provider>
     </entry>
@@ -687,16 +671,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/haemimont/goldfinger/service/ShapeServiceImp.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/haemimont/goldfinger/service/MapService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/haemimont/goldfinger/configuration/CorsConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
@@ -722,20 +696,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/haemimont/goldfinger/controller/MapController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90">
-          <caret line="12" column="72" selection-start-line="12" selection-start-column="72" selection-end-line="12" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#664#665#0" expanded="true" />
-            <element signature="e#708#709#0" expanded="true" />
-            <element signature="e#1265#1266#0" expanded="true" />
-            <element signature="e#1318#1319#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/haemimont/goldfinger/helpers/GeoJSON/GeoJsonProperties.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/haemimont/goldfinger/helpers/GeoJSON/Data.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -755,31 +715,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Front-End-jQuery/styles/style.css">
+    <entry file="file://$PROJECT_DIR$/../Front-End-jQuery/styles/bootstrap/bootrstrap.min.css" />
+    <entry file="file://$PROJECT_DIR$/../Front-End-jQuery/scripts/shapes_dropdown.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        <state relative-caret-position="330">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Front-End-jQuery/scripts/shapes_dropdown.js">
+    <entry file="file://$PROJECT_DIR$/../Front-End-jQuery/scripts/colorby.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/haemimont/goldfinger/controller/MapController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="30" column="79" selection-start-line="30" selection-start-column="67" selection-end-line="30" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Front-End-jQuery/styles/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../Front-End-jQuery/scripts/map.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-904">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="78" selection-start-line="32" selection-start-column="78" selection-end-line="32" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/haemimont/goldfinger/service/MapService.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="63" lean-forward="true" selection-start-line="6" selection-end-line="7" />
+          <caret line="6" column="80" selection-start-line="6" selection-start-column="68" selection-end-line="6" selection-end-column="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../Front-End-jQuery/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="20" column="81" selection-start-line="20" selection-start-column="81" selection-end-line="20" selection-end-column="81" />
+        <state relative-caret-position="15">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -788,8 +783,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/haemimont/goldfinger/service/MapServiceImp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="133" column="5" lean-forward="true" selection-start-line="133" selection-start-column="5" selection-end-line="133" selection-end-column="5" />
+        <state relative-caret-position="190">
+          <caret line="177" column="29" selection-start-line="177" selection-start-column="29" selection-end-line="177" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

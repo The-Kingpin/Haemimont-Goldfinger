@@ -28,12 +28,11 @@ public class MapController {
         return "Success!";
     }
 
-    @RequestMapping(value = "/draw", params = {"x", "y", "shape"}, method = RequestMethod.GET)
-    public Map drawShape(double x, double y, String shape) {
+    @RequestMapping(value = "/draw", params = {"x", "y", "shape", "colorByField"}, method = RequestMethod.GET)
+    public Map drawShape(double x, double y, String shape, String colorByField) {
 
-        System.out.println();
         try {
-            return mapService.getPolygonData(x, y, shape);
+            return mapService.getPolygonData(x, y, shape, colorByField);
         } catch (ResourceAccessException e) {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, e.getMessage());
         }
@@ -42,5 +41,10 @@ public class MapController {
     @GetMapping("/shapes")
     public SortedSet getAllShapesNames() {
         return mapService.getAllShapesNames();
+    }
+
+    @RequestMapping(value = "/fields", params = {"shape"}, method = RequestMethod.GET)
+    public SortedSet findAllShapesFieldsNames(String shape) {
+        return mapService.findAllShapesFieldsNames(shape);
     }
 }
